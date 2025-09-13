@@ -456,8 +456,6 @@ plt.ylabel("Loss")
 plt.legend()
 plt.show()
 
-
-
 """## Step 10: Run SLM Inference on our trained model"""
 
 #Load the model
@@ -471,10 +469,18 @@ context = (torch.tensor(enc.encode_ordinary(sentence)).unsqueeze(dim = 0))
 y = model.generate(context, 200)
 print(enc.decode(y.squeeze().tolist()))
 
+##Output: Once upon a time there was a pumpkin. It was nice when it suddenly shut. It had brave symprka egg. Someone had lost its head. He wasn't put it close, so he took it home to his room he opened. He saw a tiny lunch with rest of the soft spoon. It was so tall and had never bought it. He climbed up and got down. He looked back and sailed home in the air. The special place was always beautiful, warm, and wonderful people had that were as magic!Once upon a time, there was a zoo. He lived in a thin jungle lived in a fence. One day, a little frog and a little boy went out to find a way to the store the park.Ben and but The gesture had no opinion. As he asked the farmer to go at a different adventure.
+
+##They looked around in the place that was chimney with all day. Harry found it all of its loving things - it was a magic-looking way it had ever seen. Leo wanted
+
 sentence = "A little girl went to the woods"
 context = (torch.tensor(enc.encode_ordinary(sentence)).unsqueeze(dim = 0))
 y = model.generate(context, 200)
 print(enc.decode(y.squeeze().tolist()))
+
+##Output: A little girl went to the woods and saw some fish. She wanted to pet it, but it looked disgusting. The boy didn't give up. He touched the fish and he threw it gently into the fox. The bear got hurt but he got angry. The little girl tried to catch it, but she tried, and ran to help. Later that, the baby was so relieved that he was a kind little three-old.From that day on, the bunny named Bannah had a unique special gift for Mrs. Benny and was no longer hungry. She smiled and went to him with a wonderful ticket.Once upon a time there was a princess who lived in a big land in a big forest. She lived there and wanted to go collect more. So she went to the place and jumped out and down with her rock. 
+
+##She ran pastels on a side - a big trampoline! All she would do lots of yummy food for her she received. 
 
 from google.colab import runtime
 runtime.unassign()

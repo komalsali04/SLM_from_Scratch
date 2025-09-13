@@ -362,6 +362,87 @@ for epoch in tqdm(range(max_iters)):
         optimizer.zero_grad(set_to_none=True)
     scheduler.step()
 
+###"""Output: Epoch 500: train loss 9.3881, val loss 9.3948
+###The current learning rate: 0.00007
+###/usr/local/lib/python3.12/dist-packages/torch/optim/lr_scheduler.py:209: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  ###warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+###Epoch 1000: train loss 8.4213, val loss 8.4259
+###The current learning rate: 0.00010
+###Epoch 1500: train loss 7.4746, val loss 7.4728
+###The current learning rate: 0.00010
+###Epoch 2000: train loss 6.6358, val loss 6.6305
+###The current learning rate: 0.00010
+###Epoch 2500: train loss 5.9479, val loss 5.9416
+###The current learning rate: 0.00011
+##Epoch 3000: train loss 5.4558, val loss 5.4499
+###The current learning rate: 0.00011
+###Epoch 3500: train loss 5.0372, val loss 5.0349
+###The current learning rate: 0.00012
+###Epoch 4000: train loss 4.7222, val loss 4.7201
+###The current learning rate: 0.00012
+###Epoch 4500: train loss 4.4833, val loss 4.4865
+###The current learning rate: 0.00013
+###Epoch 5000: train loss 4.2788, val loss 4.2832
+###The current learning rate: 0.00014
+###Epoch 5500: train loss 4.1215, val loss 4.1208
+###The current learning rate: 0.00015
+###Epoch 6000: train loss 3.9738, val loss 3.9707
+###The current learning rate: 0.00016
+###Epoch 6500: train loss 3.8319, val loss 3.8346
+###The current learning rate: 0.00018
+###Epoch 7000: train loss 3.7182, val loss 3.7162
+###The current learning rate: 0.00019
+###Epoch 7500: train loss 3.6106, val loss 3.6118
+###The current learning rate: 0.00020
+###Epoch 8000: train loss 3.5088, val loss 3.5136
+###The current learning rate: 0.00022
+###Epoch 8500: train loss 3.4172, val loss 3.4184
+###The current learning rate: 0.00024
+###Epoch 9000: train loss 3.3350, val loss 3.3352
+###The current learning rate: 0.00025
+###Epoch 9500: train loss 3.2525, val loss 3.2585
+###The current learning rate: 0.00027
+###Epoch 10000: train loss 3.1793, val loss 3.1933
+###The current learning rate: 0.00028
+###Epoch 10500: train loss 3.1145, val loss 3.1209
+###The current learning rate: 0.00030
+###Epoch 11000: train loss 3.0604, val loss 3.0655
+###The current learning rate: 0.00032
+###Epoch 11500: train loss 2.9986, val loss 3.0024
+###The current learning rate: 0.00033
+###Epoch 12000: train loss 2.9389, val loss 2.9464
+###The current learning rate: 0.00035
+###Epoch 12500: train loss 2.8912, val loss 2.8922
+###The current learning rate: 0.00036
+###Epoch 13000: train loss 2.8485, val loss 2.8448
+###The current learning rate: 0.00038
+###Epoch 13500: train loss 2.7977, val loss 2.8036
+###The current learning rate: 0.00040
+###Epoch 14000: train loss 2.7598, val loss 2.7620
+###The current learning rate: 0.00041
+###Epoch 14500: train loss 2.7122, val loss 2.7084
+###The current learning rate: 0.00042
+###Epoch 15000: train loss 2.6730, val loss 2.6778
+###The current learning rate: 0.00044
+##Epoch 15500: train loss 2.6246, val loss 2.6368
+##The current learning rate: 0.00045
+##Epoch 16000: train loss 2.5894, val loss 2.5911
+##The current learning rate: 0.00046
+##Epoch 16500: train loss 2.5642, val loss 2.5621
+##The current learning rate: 0.00047
+##Epoch 17000: train loss 2.5342, val loss 2.5286
+##The current learning rate: 0.00048
+##Epoch 17500: train loss 2.4939, val loss 2.4975
+##The current learning rate: 0.00048
+##Epoch 18000: train loss 2.4690, val loss 2.4651
+##The current learning rate: 0.00049
+##Epoch 18500: train loss 2.4441, val loss 2.4511
+##The current learning rate: 0.00049
+##Epoch 19000: train loss 2.4110, val loss 2.4209
+###The current learning rate: 0.00050
+###Epoch 19500: train loss 2.3946, val loss 2.3926
+###The current learning rate: 0.00050
+
 """## Step 9: Plot the SLM Loss Function"""
 
 import matplotlib.pyplot as plt
@@ -374,6 +455,8 @@ plt.xlabel("Steps - Every 100 epochs")
 plt.ylabel("Loss")
 plt.legend()
 plt.show()
+
+
 
 """## Step 10: Run SLM Inference on our trained model"""
 
